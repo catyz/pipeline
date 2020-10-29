@@ -1,0 +1,7 @@
+from toast_pb2 import pb2tod
+
+detector = 'PB20.13.12_Comb16Ch10'
+tod = pb2tod(datadir='/global/cscratch1/sd/yzh/data/ChileData/Run20000065/')
+
+signal = tod.read(detector) #calls pb2tod._get()
+#pointing = tod.read_pntg(detector) #calls pb2tod._get_pntg()

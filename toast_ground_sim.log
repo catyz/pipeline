@@ -1,0 +1,498 @@
+TOAST INFO: Running with 160 processes at 2020-05-27 18:34:58.528131
+TOAST INFO: All parameters:
+TOAST INFO: group_size = None
+TOAST INFO: do_daymaps = False
+TOAST INFO: do_seasonmaps = False
+TOAST INFO: debug = False
+TOAST INFO: scan_rate = 0.3
+TOAST INFO: scan_accel = 10.0
+TOAST INFO: scan_sinc_modulate = False
+TOAST INFO: sun_angle_min = 30.0
+TOAST INFO: schedule = schedule.txt
+TOAST INFO: weather = None
+TOAST INFO: timezone = 0
+TOAST INFO: sample_rate = 10.0
+TOAST INFO: coord = C
+TOAST INFO: split_schedule = None
+TOAST INFO: sort_schedule = True
+TOAST INFO: hwp_rpm = None
+TOAST INFO: hwp_step_deg = None
+TOAST INFO: hwp_step_time_s = None
+TOAST INFO: elevation_noise_a = 0
+TOAST INFO: elevation_noise_b = 0
+TOAST INFO: nside = 64
+TOAST INFO: nside_submap = 16
+TOAST INFO: single_precision_pointing = False
+TOAST INFO: common_flag_mask = 1
+TOAST INFO: flush = False
+TOAST INFO: apply_polyfilter = False
+TOAST INFO: poly_order = 0
+TOAST INFO: apply_groundfilter = False
+TOAST INFO: ground_order = 0
+TOAST INFO: simulate_atmosphere = False
+TOAST INFO: focalplane_radius_deg = None
+TOAST INFO: atm_verbosity = 0
+TOAST INFO: atm_lmin_center = 0.01
+TOAST INFO: atm_lmin_sigma = 0.001
+TOAST INFO: atm_lmax_center = 10.0
+TOAST INFO: atm_lmax_sigma = 10.0
+TOAST INFO: atm_gain = 3e-05
+TOAST INFO: atm_zatm = 40000.0
+TOAST INFO: atm_zmax = 200.0
+TOAST INFO: atm_xstep = 10.0
+TOAST INFO: atm_ystep = 10.0
+TOAST INFO: atm_zstep = 10.0
+TOAST INFO: atm_nelem_sim_max = 1000
+TOAST INFO: atm_wind_dist = 500.0
+TOAST INFO: atm_z0_center = 2000.0
+TOAST INFO: atm_z0_sigma = 0.0
+TOAST INFO: atm_T0_center = 280.0
+TOAST INFO: atm_T0_sigma = 10.0
+TOAST INFO: atm_cache = atm_cache
+TOAST INFO: simulate_noise = True
+TOAST INFO: apply_gainscrambler = False
+TOAST INFO: gain_sigma = 0.01
+TOAST INFO: madam_prefix = toast
+TOAST INFO: madam_iter_max = 1000
+TOAST INFO: madam_precond_width = 100
+TOAST INFO: madam_precond_width_min = None
+TOAST INFO: madam_precond_width_max = None
+TOAST INFO: madam_baseline_length = 10000.0
+TOAST INFO: madam_baseline_order = 0
+TOAST INFO: madam_noisefilter = False
+TOAST INFO: madam_parfile = None
+TOAST INFO: madam_allreduce = False
+TOAST INFO: madam_concatenate_messages = True
+TOAST INFO: destripe = False
+TOAST INFO: write_binmap = False
+TOAST INFO: write_hits = True
+TOAST INFO: write_wcov = True
+TOAST INFO: write_wcov_inv = True
+TOAST INFO: conserve_memory = True
+TOAST INFO: input_map = None
+TOAST INFO: simulate_sky = True
+TOAST INFO: pysm_model = None
+TOAST INFO: pysm_apply_beam = True
+TOAST INFO: pysm_precomputed_cmb_K_CMB = None
+TOAST INFO: pysm_mpi_comm = group
+TOAST INFO: ground_map = None
+TOAST INFO: ground_nside = 128
+TOAST INFO: ground_fwhm_deg = 10
+TOAST INFO: ground_lmax = 256
+TOAST INFO: ground_scale = 0.001
+TOAST INFO: ground_power = -1
+TOAST INFO: simulate_ground = False
+TOAST INFO: tidas = None
+TOAST INFO: spt3g = None
+TOAST INFO: MC_start = 0
+TOAST INFO: MC_count = 1
+TOAST INFO: outdir = out
+TOAST INFO: focalplane = focalplane.pkl
+TOAST INFO: freq = 100
+TOAST INFO: Parsed parameters:  0.01 seconds (1 calls)
+TOAST INFO: Load 6 (sub)scans in schedule.txt:  0.57 seconds (1 calls)
+TOAST INFO: Loading schedule(s):  3.35 seconds (1 calls)
+TOAST INFO: Loading focalplanes:  0.58 seconds (1 calls)
+TOAST INFO: Group #    0 has 6 observations.
+TOAST INFO: Simulated scans:  0.97 seconds (1 calls)
+TOAST INFO: Expanding pointing
+TOAST INFO: Pointing generation:  14.78 seconds (1 calls)
+TOAST INFO: Processing frequency 100.0GHz 1 / 1, MC = 0
+TOAST INFO: Simulating noise
+TOAST INFO: Simulate noise:  16.76 seconds (1 calls)
+TOAST INFO: Making maps
+TOAST INFO: Mapping toast_100_telescope_all_time_all
+TOAST INFO: OpMadam: 100.00 % of samples are included in valid intervals.
+TOAST INFO: Collect period ranges:  0.02 seconds (1 calls)
+TOAST INFO: Collect dataset dimensions:  0.02 seconds (1 calls)
+TOAST INFO: Stage time:  0.02 seconds (1 calls)
+<toast.Environment
+  Source code version = 2.3.6
+  Logging level = INFO
+  Handling enabled for 0 signals:
+  Max threads = 2
+  MPI build enabled
+  MPI runtime enabled
+>
+Memory usage after staging time
+       total :  125.785 GB  <  125.785 +-    0.000 GB  <  125.785 GB
+   available :  100.399 GB  <  100.991 +-    0.345 GB  <  101.627 GB
+     percent :   19.200 %   <   19.700 +-    0.287 %   <   20.200 % 
+        used :   22.968 GB  <   23.440 +-    0.283 GB  <   24.032 GB
+        free :  100.744 GB  <  101.315 +-    0.352 GB  <  101.974 GB
+      active :   20.873 GB  <   21.331 +-    0.163 GB  <   21.419 GB
+    inactive :  639.391 MB  <  870.449 +-  103.466 MB  <  958.770 MB
+     buffers :   11.305 MB  <   11.969 +-    0.361 MB  <   12.434 MB
+      cached :    0.764 GB  <    0.992 +-    0.103 GB  <    1.083 GB
+      shared :  377.891 MB  <  604.328 +-   92.143 MB  <  632.801 MB
+        slab :  407.531 MB  <  430.875 +-    9.349 MB  <  434.949 MB
+
+TOAST INFO: Stage signal:  0.45 seconds (1 calls)
+Node has 18.658 GB allocated in TOAST TOD caches and 0.073 GB in Madam caches (18.731 GB total) after staging time
+Memory usage after staging signal
+       total :  125.785 GB  <  125.785 +-    0.000 GB  <  125.785 GB
+   available :   96.770 GB  <   97.371 +-    0.355 GB  <   98.000 GB
+     percent :   22.100 %   <   22.600 +-    0.297 %   <   23.100 % 
+        used :   26.522 GB  <   27.068 +-    0.295 GB  <   27.660 GB
+        free :   97.115 GB  <   97.695 +-    0.362 GB  <   98.347 GB
+      active :   24.434 GB  <   24.966 +-    0.181 GB  <   25.056 GB
+    inactive :  639.402 MB  <  870.527 +-  103.474 MB  <  958.812 MB
+     buffers :   11.305 MB  <   11.969 +-    0.361 MB  <   12.434 MB
+      cached :    0.764 GB  <    0.992 +-    0.103 GB  <    1.083 GB
+      shared :  377.902 MB  <  604.383 +-   92.156 MB  <  632.848 MB
+        slab :  407.531 MB  <  430.840 +-    9.350 MB  <  434.945 MB
+
+TOAST INFO: Stage pixels 1 / 16:  0.45 seconds (1 calls)
+TOAST INFO: Stage pixels 2 / 16:  0.38 seconds (1 calls)
+TOAST INFO: Stage pixels 3 / 16:  0.38 seconds (1 calls)
+TOAST INFO: Stage pixels 4 / 16:  0.38 seconds (1 calls)
+TOAST INFO: Stage pixels 5 / 16:  0.37 seconds (1 calls)
+TOAST INFO: Stage pixels 6 / 16:  0.37 seconds (1 calls)
+TOAST INFO: Stage pixels 7 / 16:  0.37 seconds (1 calls)
+TOAST INFO: Stage pixels 8 / 16:  0.37 seconds (1 calls)
+TOAST INFO: Stage pixels 9 / 16:  0.38 seconds (1 calls)
+TOAST INFO: Stage pixels 10 / 16:  0.37 seconds (1 calls)
+TOAST INFO: Stage pixels 11 / 16:  0.37 seconds (1 calls)
+TOAST INFO: Stage pixels 12 / 16:  0.37 seconds (1 calls)
+TOAST INFO: Stage pixels 13 / 16:  0.38 seconds (1 calls)
+TOAST INFO: Stage pixels 14 / 16:  0.38 seconds (1 calls)
+TOAST INFO: Stage pixels 15 / 16:  0.38 seconds (1 calls)
+TOAST INFO: Stage pixels 16 / 16:  0.38 seconds (1 calls)
+TOAST INFO: Stage pixels:  6.04 seconds (1 calls)
+Node has 18.658 GB allocated in TOAST TOD caches and 3.715 GB in Madam caches (22.374 GB total) after staging signal
+Memory usage after staging pixels
+       total :  125.785 GB  <  125.785 +-    0.000 GB  <  125.785 GB
+   available :   98.121 GB  <   98.721 +-    0.351 GB  <   99.351 GB
+     percent :   21.000 %   <   21.500 +-    0.276 %   <   22.000 % 
+        used :   25.200 GB  <   25.717 +-    0.290 GB  <   26.310 GB
+        free :   98.466 GB  <   99.045 +-    0.358 GB  <   99.698 GB
+      active :   23.096 GB  <   23.598 +-    0.173 GB  <   23.687 GB
+    inactive :  639.531 MB  <  870.588 +-  103.466 MB  <  958.906 MB
+     buffers :   11.305 MB  <   11.969 +-    0.361 MB  <   12.434 MB
+      cached :    0.764 GB  <    0.992 +-    0.103 GB  <    1.083 GB
+      shared :  378.031 MB  <  604.469 +-   92.143 MB  <  632.938 MB
+        slab :  407.297 MB  <  430.686 +-    9.066 MB  <  433.402 MB
+
+TOAST INFO: Stage pixel weights 1 / 16:  0.84 seconds (1 calls)
+TOAST INFO: Stage pixel weights 2 / 16:  0.84 seconds (1 calls)
+TOAST INFO: Stage pixel weights 3 / 16:  0.85 seconds (1 calls)
+TOAST INFO: Stage pixel weights 4 / 16:  0.85 seconds (1 calls)
+TOAST INFO: Stage pixel weights 5 / 16:  0.84 seconds (1 calls)
+TOAST INFO: Stage pixel weights 6 / 16:  0.84 seconds (1 calls)
+TOAST INFO: Stage pixel weights 7 / 16:  0.84 seconds (1 calls)
+TOAST INFO: Stage pixel weights 8 / 16:  0.84 seconds (1 calls)
+TOAST INFO: Stage pixel weights 9 / 16:  0.84 seconds (1 calls)
+TOAST INFO: Stage pixel weights 10 / 16:  0.84 seconds (1 calls)
+TOAST INFO: Stage pixel weights 11 / 16:  0.84 seconds (1 calls)
+TOAST INFO: Stage pixel weights 12 / 16:  0.83 seconds (1 calls)
+TOAST INFO: Stage pixel weights 13 / 16:  0.85 seconds (1 calls)
+TOAST INFO: Stage pixel weights 14 / 16:  0.85 seconds (1 calls)
+TOAST INFO: Stage pixel weights 15 / 16:  0.85 seconds (1 calls)
+TOAST INFO: Stage pixel weights 16 / 16:  0.85 seconds (1 calls)
+TOAST INFO: Stage pixel weights:  13.55 seconds (1 calls)
+Node has 15.471 GB allocated in TOAST TOD caches and 5.537 GB in Madam caches (21.008 GB total) after staging pixels
+Memory usage after staging pixel weights
+       total :  125.785 GB  <  125.785 +-    0.000 GB  <  125.785 GB
+   available :  103.620 GB  <  104.204 +-    0.337 GB  <  104.848 GB
+     percent :   16.600 %   <   17.150 +-    0.268 %   <   17.600 % 
+        used :   19.809 GB  <   20.223 +-    0.273 GB  <   20.811 GB
+        free :  103.965 GB  <  104.528 +-    0.344 GB  <  105.195 GB
+      active :   17.731 GB  <   18.126 +-    0.148 GB  <   18.213 GB
+    inactive :  639.531 MB  <  870.588 +-  103.466 MB  <  958.906 MB
+     buffers :   11.305 MB  <   11.969 +-    0.361 MB  <   12.434 MB
+      cached :    0.764 GB  <    0.992 +-    0.103 GB  <    1.083 GB
+      shared :  378.031 MB  <  604.469 +-   92.143 MB  <  632.938 MB
+        slab :  405.867 MB  <  429.160 +-    8.987 MB  <  432.035 MB
+
+TOAST INFO: Stage all data:  20.20 seconds (1 calls)
+TOAST INFO: Collect PSD info:  0.00 seconds (1 calls)
+Node has 4.544 GB allocated in TOAST TOD caches and 11.000 GB in Madam caches (15.544 GB total) after staging pixel weights
+Memory usage just before calling libmadam.destripe
+       total :  125.785 GB  <  125.785 +-    0.000 GB  <  125.785 GB
+   available :  103.620 GB  <  104.204 +-    0.337 GB  <  104.848 GB
+     percent :   16.600 %   <   17.150 +-    0.268 %   <   17.600 % 
+        used :   19.809 GB  <   20.223 +-    0.273 GB  <   20.811 GB
+        free :  103.965 GB  <  104.529 +-    0.344 GB  <  105.195 GB
+      active :   17.731 GB  <   18.126 +-    0.148 GB  <   18.213 GB
+    inactive :  639.531 MB  <  870.588 +-  103.466 MB  <  958.906 MB
+     buffers :   11.305 MB  <   11.969 +-    0.361 MB  <   12.434 MB
+      cached :    0.764 GB  <    0.992 +-    0.103 GB  <    1.083 GB
+      shared :  378.031 MB  <  604.469 +-   92.143 MB  <  632.938 MB
+        slab :  405.867 MB  <  429.160 +-    8.987 MB  <  432.035 MB
+
+OMP: 160 tasks with 4 procs per node, 2 threads per task.
+
+ Program MADAM
+ Destriping of CMB data with a noise filter
+ Version 3.7
+
+
+Examining periods
+
+Flagged 0 samples on 0 periods that had less than  0.100% of unflagged samples
+Total number of samples (single detector): 97776000
+Zero-weight fraction (all detectors):   0.000 %
+Flagged fraction (all detectors):   0.118 %
+Total number of intervals: 960
+Max number of samples per task: 611100
+
+ Initializing parameters
+ Adjusting noise weights using noise spectra 
+ Polarized detectors present:  Will produce polarization maps
+ noise_weights_from_psd =  T
+ radiometers =  T
+ mode_detweight =            0
+
+ istart_mission        =            0
+ nosamples_tot         =     97776000
+ Initializing parallelization
+ ntasks                =          160  Number or processes
+ nosamples_tot         =     97776000  Total samples
+ nosamples_proc_max    =       611100  Samples/process
+
+ MCMode                =            F
+ write_cut             =            F
+ basis_func            = Legendre      Destriping function basis
+ basis_order           =            0  Destriping function order
+
+ bin_subsets           =            F
+
+ ntasks                =          160  Number of processes
+ nthreads              =            2  Number of threads per process
+ info                  =            3  Screen output level
+ fsample               =      10.0000  Sampling frequency (Hz)
+ nmap                  =            3  Polarization included
+ ncc                   =            6  Independent wcov elements
+ Input files:
+
+ nside_map             =           64  Healpix resolution (output map)
+ nside_cross           =           32  Healpix resolution (destriping)
+ nside_submap          =           16  Submap resolution
+ concatenate_messages  =            T  use mpi_alltoallv to communicate
+ reassign_submaps      =            T  minimize communication by reassigning submaps
+ pixmode_map           =            2  Pixel rejection criterion (output map)
+ pixmode_cross         =            2  Pixel rejection criterion (destriping)
+ pixlim_map            =  1.00000E-02  Pixel rejection limit (output map)
+ pixlim_cross          =  1.00000E-03  Pixel rejection limit (destriping)
+
+ Standard mode
+ psdlen                =      1000000  Length of requested noise PSD
+ psd_downsample        =           10  PSD downsampling factor
+ kfirst                =            F  First destriping OFF
+
+ cglimit               =  1.00000E-12  Iteration convergence limit
+ iter_min              =            3  Minimum number of iterations
+ iter_max              =         1000  Maximum number of iterations
+ precond_width_min     =            0  Min width of the preconditioner band matrix
+ precond_width_max     =            0  Max width of the preconditioner band matrix
+ No preconditioning
+ flag_by_horn          =            F  Flags are independent
+ mode_detweight        =            0  Detector weighting mode: sigma from simulation file
+
+
+ time_unit             =           pp  Time unit = pointing period
+ mission_time          =          960  Mission length in time units
+ nosamples_tot         =     97776000  Total samples
+                       =    2716.0000  hours
+
+ Detectors available on the FIRST process and noise according to the FIRST period
+ detector              sigma         weight 1/sqrt(weight)
+ 13.10_1.150B    0.31780E-02     99010.        0.31780E-02
+ 13.10_1.150T    0.31780E-02     99010.        0.31780E-02
+ 13.10_1.90B     0.31780E-02     99010.        0.31780E-02
+ 13.10_1.90T     0.31780E-02     99010.        0.31780E-02
+ 13.10_10.150    0.31780E-02     99010.        0.31780E-02
+ 13.10_10.150    0.31780E-02     99010.        0.31780E-02
+ 13.10_10.90B    0.31780E-02     99010.        0.31780E-02
+ 13.10_10.90T    0.31780E-02     99010.        0.31780E-02
+ 13.10_100.15    0.31780E-02     99010.        0.31780E-02
+ 13.10_100.15    0.31780E-02     99010.        0.31780E-02
+ 13.10_100.90    0.31780E-02     99010.        0.31780E-02
+ 13.10_100.90    0.31780E-02     99010.        0.31780E-02
+ 13.10_101.15    0.31780E-02     99010.        0.31780E-02
+ 13.10_101.15    0.31780E-02     99010.        0.31780E-02
+ 13.10_101.90    0.31780E-02     99010.        0.31780E-02
+ 13.10_101.90    0.31780E-02     99010.        0.31780E-02
+ 13.10_102.15    0.31780E-02     99010.        0.31780E-02
+ 13.10_102.15    0.31780E-02     99010.        0.31780E-02
+ 13.10_102.90    0.31780E-02     99010.        0.31780E-02
+ 13.10_102.90    0.31780E-02     99010.        0.31780E-02
+ 13.10_103.15    0.31780E-02     99010.        0.31780E-02
+ 13.10_103.15    0.31780E-02     99010.        0.31780E-02
+ 13.10_103.90    0.31780E-02     99010.        0.31780E-02
+ 13.10_103.90    0.31780E-02     99010.        0.31780E-02
+ 13.10_104.15    0.31780E-02     99010.        0.31780E-02
+ 13.10_104.15    0.31780E-02     99010.        0.31780E-02
+ 13.10_104.90    0.31780E-02     99010.        0.31780E-02
+ 13.10_104.90    0.31780E-02     99010.        0.31780E-02
+ 13.10_105.15    0.31780E-02     99010.        0.31780E-02
+ 13.10_105.15    0.31780E-02     99010.        0.31780E-02
+ 13.10_105.90    0.31780E-02     99010.        0.31780E-02
+ 13.10_105.90    0.31780E-02     99010.        0.31780E-02
+ 13.10_106.15    0.31780E-02     99010.        0.31780E-02
+ 13.10_106.15    0.31780E-02     99010.        0.31780E-02
+ 13.10_106.15    0.31780E-02     99010.        0.31780E-02
+ 13.10_106.90    0.31780E-02     99010.        0.31780E-02
+ 13.10_106.90    0.31780E-02     99010.        0.31780E-02
+ 13.10_106.90    0.31780E-02     99010.        0.31780E-02
+ 13.10_107.15    0.31780E-02     99010.        0.31780E-02
+ 13.10_107.15    0.31780E-02     99010.        0.31780E-02
+ 13.10_107.90    0.31780E-02     99010.        0.31780E-02
+ 13.10_107.90    0.31780E-02     99010.        0.31780E-02
+ 13.10_108.15    0.31780E-02     99010.        0.31780E-02
+ 13.10_108.15    0.31780E-02     99010.        0.31780E-02
+ 13.10_108.90    0.31780E-02     99010.        0.31780E-02
+ 13.10_108.90    0.31780E-02     99010.        0.31780E-02
+ 13.10_109.15    0.31780E-02     99010.        0.31780E-02
+ 13.10_109.15    0.31780E-02     99010.        0.31780E-02
+ 13.10_109.90    0.31780E-02     99010.        0.31780E-02
+ 13.10_109.90    0.31780E-02     99010.        0.31780E-02
+
+ Output files
+ file_root    = toast_100_telescope_all_time_all
+ file_hit     = out/00000000/100/toast_100_telescope_all_time_all_hmap.fits
+ file_matrix  = out/00000000/100/toast_100_telescope_all_time_all_wcov_inv.fits
+ file_wcov    = out/00000000/100/toast_100_telescope_all_time_all_wcov.fits
+ binary_output      =  F
+ concatenate_binary =  F
+
+ TOD memory                min =    233.70 MB   max =   238.36 MB   total =    37.15 GB
+ Baseline memory           min =      0.00 B    max =     0.00 B    total =     0.00 B 
+ Pointing memory           min =    571.13 MB   max =   582.79 MB   total =    90.83 GB
+ Basis function memory     min =      0.00 B    max =     0.00 B    total =     0.00 B 
+ Clock =     0.161 s
+  0 : reduce_pixels completed in   0.204 s
+ Total submaps = 3072  submap size = 16
+ Local submaps:  min = 134  max = 143  mean =   137.62
+ Submap table memory       min =      1.88 MB   max =     1.88 MB   total =   300.00 MB
+ local maps memory         min =    209.47 kB   max =   223.54 kB   total =    33.62 MB
+ All2allv memory           min =    123.25 kB   max =   265.88 kB   total =    38.02 MB
+ Map memory                min =     30.88 kB   max =    32.50 kB   total =     4.88 MB
+ Building pixel matrices...
+  0 : pixel_matrix completed in   0.257 s
+ Counting hits...
+ Binning TOD...
+  0 : bin_tod completed in   0.165 s
+ Clock =     0.922 s
+
+ Finalization begins
+
+ Clock =     0.922 s
+ Writing pixel matrix...
+  0 : Write matrix completed in   0.124 s
+ Inverting pixel matrices...
+ Pixel matrix written in out/00000000/100/toast_100_telescope_all_time_all_wcov_inv.fits
+
+     2057 pixels solved
+    47095 pixels unsolved
+        0 pixels had decoupled intensity
+ Constructing output map...
+
+ Destriped map:
+ Map                     1                 2                 3       
+ Writing pixel matrix...
+ Std            0.00000E+00 K      0.00000E+00 K      0.00000E+00 K 
+ Mean           0.00000E+00 K      0.00000E+00 K      0.00000E+00 K 
+ Min            0.00000E+00 K      0.00000E+00 K      0.00000E+00 K 
+ Max            0.00000E+00 K      0.00000E+00 K      0.00000E+00 K 
+
+  0 : Write matrix completed in   0.113 s
+ Writing hits...
+ Pixel matrix written in out/00000000/100/toast_100_telescope_all_time_all_wcov.fits
+ Hit count written in out/00000000/100/toast_100_telescope_all_time_all_hmap.fits
+ Clock =     1.238 s
+
+ MEMORY (MB):
+ Detector pointing         min =    571.13 MB   max =   582.79 MB   total =    90.83 GB
+ TOD buffer                min =    233.70 MB   max =   238.36 MB   total =    37.15 GB
+ Maps                      min =     30.88 kB   max =    32.50 kB   total =     4.88 MB
+ Baselines                 min =      0.24 kB   max =     0.24 kB   total =    38.44 kB
+ Basis functions           min =      0.00 B    max =     0.00 B    total =     0.00 B 
+ Noise filter              min =      0.00 B    max =     0.00 B    total =     0.00 B 
+ Preconditioner            min =      0.00 B    max =     0.00 B    total =     0.00 B 
+ Submap table              min =      1.88 MB   max =     1.88 MB   total =   300.00 MB
+ Temporary maps            min =    209.47 kB   max =   223.54 kB   total =    33.62 MB
+ All2All buffers           min =    123.25 kB   max =   265.88 kB   total =    38.02 MB
+ CG work space             min =      0.00 B    max =     0.00 B    total =     0.00 B 
+ NCM                       min =      0.00 B    max =     0.00 B    total =     0.00 B 
+ Total                     min =    807.07 MB   max =   823.53 MB   total =   128.35 GB
+ WALL-CLOCK TIME (s):
+ Initialization                  mean =     0.2  min =     0.2  max =     0.2
+ I/O                             mean =     0.1  min =     0.1  max =     0.1
+   - Pointing Period boundaries  mean =     0.1  min =     0.1  max =     0.1
+ Building pixel matrices         mean =     0.2  min =     0.2  max =     0.2
+ Binning TOD                     mean =     0.2  min =     0.2  max =     0.2
+ Counting hits                   mean =     0.1  min =     0.1  max =     0.1
+ Finalization and output         mean =     0.3  min =     0.3  max =     0.3
+ Other                           mean =     0.2  min =     0.1  max =     0.2
+ Total                          1.2 s  (        0.11 CPU hours)
+
+TOAST INFO: Unstage signal 1 / 16:  0.01 seconds (1 calls)
+TOAST INFO: Unstage pixels 1 / 16:  0.39 seconds (1 calls)
+TOAST INFO: Unstage pixel weights 1 / 16:  0.87 seconds (1 calls)
+TOAST INFO: Unstage data 1 / 16:  1.27 seconds (1 calls)
+TOAST INFO: Unstage signal 2 / 16:  0.01 seconds (1 calls)
+TOAST INFO: Unstage pixels 2 / 16:  0.38 seconds (1 calls)
+TOAST INFO: Unstage pixel weights 2 / 16:  0.85 seconds (1 calls)
+TOAST INFO: Unstage data 2 / 16:  1.24 seconds (1 calls)
+TOAST INFO: Unstage signal 3 / 16:  0.01 seconds (1 calls)
+TOAST INFO: Unstage pixels 3 / 16:  0.39 seconds (1 calls)
+TOAST INFO: Unstage pixel weights 3 / 16:  0.87 seconds (1 calls)
+TOAST INFO: Unstage data 3 / 16:  1.27 seconds (1 calls)
+TOAST INFO: Unstage signal 4 / 16:  0.01 seconds (1 calls)
+TOAST INFO: Unstage pixels 4 / 16:  0.39 seconds (1 calls)
+TOAST INFO: Unstage pixel weights 4 / 16:  0.86 seconds (1 calls)
+TOAST INFO: Unstage data 4 / 16:  1.26 seconds (1 calls)
+TOAST INFO: Unstage signal 5 / 16:  0.01 seconds (1 calls)
+TOAST INFO: Unstage pixels 5 / 16:  0.38 seconds (1 calls)
+TOAST INFO: Unstage pixel weights 5 / 16:  0.84 seconds (1 calls)
+TOAST INFO: Unstage data 5 / 16:  1.23 seconds (1 calls)
+TOAST INFO: Unstage signal 6 / 16:  0.01 seconds (1 calls)
+TOAST INFO: Unstage pixels 6 / 16:  0.38 seconds (1 calls)
+TOAST INFO: Unstage pixel weights 6 / 16:  0.85 seconds (1 calls)
+TOAST INFO: Unstage data 6 / 16:  1.24 seconds (1 calls)
+TOAST INFO: Unstage signal 7 / 16:  0.01 seconds (1 calls)
+TOAST INFO: Unstage pixels 7 / 16:  0.38 seconds (1 calls)
+TOAST INFO: Unstage pixel weights 7 / 16:  0.84 seconds (1 calls)
+TOAST INFO: Unstage data 7 / 16:  1.23 seconds (1 calls)
+TOAST INFO: Unstage signal 8 / 16:  0.01 seconds (1 calls)
+TOAST INFO: Unstage pixels 8 / 16:  0.38 seconds (1 calls)
+TOAST INFO: Unstage pixel weights 8 / 16:  0.85 seconds (1 calls)
+TOAST INFO: Unstage data 8 / 16:  1.24 seconds (1 calls)
+TOAST INFO: Unstage signal 9 / 16:  0.01 seconds (1 calls)
+TOAST INFO: Unstage pixels 9 / 16:  0.38 seconds (1 calls)
+TOAST INFO: Unstage pixel weights 9 / 16:  0.85 seconds (1 calls)
+TOAST INFO: Unstage data 9 / 16:  1.24 seconds (1 calls)
+TOAST INFO: Unstage signal 10 / 16:  0.01 seconds (1 calls)
+TOAST INFO: Unstage pixels 10 / 16:  0.38 seconds (1 calls)
+TOAST INFO: Unstage pixel weights 10 / 16:  0.85 seconds (1 calls)
+TOAST INFO: Unstage data 10 / 16:  1.23 seconds (1 calls)
+TOAST INFO: Unstage signal 11 / 16:  0.01 seconds (1 calls)
+TOAST INFO: Unstage pixels 11 / 16:  0.38 seconds (1 calls)
+TOAST INFO: Unstage pixel weights 11 / 16:  0.85 seconds (1 calls)
+TOAST INFO: Unstage data 11 / 16:  1.24 seconds (1 calls)
+TOAST INFO: Unstage signal 12 / 16:  0.01 seconds (1 calls)
+TOAST INFO: Unstage pixels 12 / 16:  0.38 seconds (1 calls)
+TOAST INFO: Unstage pixel weights 12 / 16:  0.85 seconds (1 calls)
+TOAST INFO: Unstage data 12 / 16:  1.23 seconds (1 calls)
+TOAST INFO: Unstage signal 13 / 16:  0.01 seconds (1 calls)
+TOAST INFO: Unstage pixels 13 / 16:  0.39 seconds (1 calls)
+TOAST INFO: Unstage pixel weights 13 / 16:  0.87 seconds (1 calls)
+TOAST INFO: Unstage data 13 / 16:  1.27 seconds (1 calls)
+TOAST INFO: Unstage signal 14 / 16:  0.01 seconds (1 calls)
+TOAST INFO: Unstage pixels 14 / 16:  0.39 seconds (1 calls)
+TOAST INFO: Unstage pixel weights 14 / 16:  0.87 seconds (1 calls)
+TOAST INFO: Unstage data 14 / 16:  1.27 seconds (1 calls)
+TOAST INFO: Unstage signal 15 / 16:  0.01 seconds (1 calls)
+TOAST INFO: Unstage pixels 15 / 16:  0.39 seconds (1 calls)
+TOAST INFO: Unstage pixel weights 15 / 16:  0.87 seconds (1 calls)
+TOAST INFO: Unstage data 15 / 16:  1.26 seconds (1 calls)
+TOAST INFO: Unstage signal 16 / 16:  0.01 seconds (1 calls)
+TOAST INFO: Unstage pixels 16 / 16:  0.39 seconds (1 calls)
+TOAST INFO: Unstage pixel weights 16 / 16:  0.87 seconds (1 calls)
+TOAST INFO: Unstage data 16 / 16:  1.27 seconds (1 calls)
+TOAST INFO: Unstage all data:  19.99 seconds (1 calls)
+TOAST INFO: Mapping toast_100_telescope_all_time_all:  41.62 seconds (1 calls)
+TOAST INFO: Madam total:  41.62 seconds (1 calls)
+TOAST INFO: Gather and dump timing info:  0.00 seconds (1 calls)
+TOAST INFO: toast_ground_sim.py:  78.07 seconds (1 calls)

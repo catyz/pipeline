@@ -1,0 +1,11 @@
+--simulate-noise
+--sample-rate
+152.6
+--simulate-sky
+--input-map
+input_map.fits
+--nside
+512
+--mode=I
+--mapmaker-prefix
+test_

@@ -1,0 +1,56 @@
+from toast.tod import TOD
+from glob import glob
+from spt3g import core
+import numpy as np
+
+class pb2tod(TOD):
+
+    def __init__(
+            self,
+            datadir,
+    ):
+
+        self.datafiles = sorted(glob(datadir+'*.g3'))
+
+        self.f = []
+        for i in range(1, len(self.datafiles)-1):
+            self.f.append(list(core.G3File(self.datafiles[i])))
+            print("Read in data file number {}".format(i))
+
+        detectors = []
+        for det in self.f[0][2]["RawTimestreams_I"]:
+            detectors.append(str(det).split(',')[0][1:])
+        
+       
+        super().__init__(
+            mpicomm=None,
+            detectors=detectors,
+            samples=100000,
+            detindx={x[0]:x[1] for x in zip(detectors, range(len(detectors)))},
+            detranks=1
+        )
+
+        self.load_frames()
+
+    def load_frames(self):
+        #for det in self.local_dets:
+        det = 'PB20.13.12_Comb16Ch10'
+        name = "{}_{}".format(self.SIGNAL_NAME, det)
+#        self.cache.create(name, np.float64, tod)
+            
+        tod = []
+        for file in range(0,len(self.f)):
+            for frame in range(0,len(self.f[i])):
+                if self.f[file][frame].type==core.G3FrameType.Scan:
+                    array.append(self.f[file][frame]["RawTimestreams_I"][str(det).split(',')[0][1:]])
+        self.cache.create(name, np.float64, tod)
+        return    
+    
+    def _get(self, detector, start, n):
+        name = "{}_{}".format("signal",detector)
+        ref = self.cache.reference(name)[start:start+n]
+        return ref
+
+    
+
+    
